@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# New wine for old bottles
-
+New wine for old bottles
+========================
 
 The following rules appear in Kernighan & Plauger’s _The Elements of Programming Style_, second edition, NY: McGraw-Hill, 1978.
 

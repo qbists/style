@@ -1,12 +1,5 @@
----
-title: Lines of communication – Remarks on Style – kdb+ and q documentation
-description: A variable is a line of communication between where it is set and where it is read. The length of that line affects clarity. 
-author: Stephen Taylor
-date: Sep 2018
-keywords: kdb+, q, style
----
-# Lines of communication
-
+Lines of communication
+======================
 
 A variable is a line of communication between where it is set and where it is read. The length of that line affects clarity. 
 
@@ -19,8 +12,8 @@ The nearer and sooner we use it, the sooner we unburden our reader, and more cle
 Let’s try to formalize our intuitions about distances within the workspace by ranking different instances of distance.
 
 
-## Distance within an expression
-
+Distance within an expression
+-----------------------------
 The expression being executed is where the action is. So our first metric is distance within an expression. Consider the following two equivalent function lines.
 
 ```q
@@ -45,13 +38,13 @@ selection:where(format 1)#0 1             / [4]
 in which not even a local name is assigned.
 
 
-## Distance between lines
-
+Distance between lines
+----------------------
 Our second intuition of ‘distance’ is between lines in a function. The more function lines separate the naming and the using of an object, the further apart they are, and the longer is the communication path. Any two name references in the same line of code are closer together than any two references on different lines.
 
 
-## Distance between functions
-
+Distance between functions
+--------------------------
 Our third intuition of distance is between levels on the execution stack, or execution stack. References on different levels of the execution stack are further apart than references in the same lambda.
 
 These intuited distances seem to combine according to discernible rules. Consider: function `F` calls `G`, then `H`. `G` sets a variable `a`, and `H` reads it. (We do not recommend this design.)

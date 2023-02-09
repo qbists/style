@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Maxims
-
+Maxims
+======
 
 
 

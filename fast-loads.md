@@ -1,7 +1,7 @@
-# Fast loads
+Fast loads
+==========
 
-
-==TODO: Translate to q.==
+==TODO: Rewrite for q.==
 
 
 **Loads should take no time.**

@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Defaulting the argument list
-
+Defaulting the argument list
+============================
 
 Functions of zero, one, two and three arguments:
 

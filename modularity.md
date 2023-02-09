@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Modularity
-
+Modularity
+==========
 
 
 Function modularity is a Good Thing, and one way to achieve it is through the judicious use of subfunction abstraction. Artfully modularized systems are easier to understand than ones which are either impenetrably monolithic or which have been decomposed haphazardly.
@@ -54,7 +49,7 @@ q)-1 tree[`;0]
 ```
 
 :point_right: 
-Reference: [`.z.s`](../ref/dotz.md#zs-self)
+Reference: [`.z.s`](https://code.kx.com/q/ref/dotz.md#zs-self)
 
 Observe that the user of `tree` has to supply an initial value for the counter, always 0. Bit of gunk. 
 

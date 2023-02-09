@@ -1,14 +1,9 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Names
+Names
+=====
 
 
-
-## Names should be easy to type
-
+Names should be easy to type
+----------------------------
 That is, short, and containing no, or only a very few, shifted characters. 
 
 The Great Divide is between local and global variables. 
@@ -36,7 +31,7 @@ q.stat)stdv:{sqrt var x}
 Directory names should be as short as can be managed, to minimize the length of the absolute paths. 
 The minimum is a dot followed by two characters. 
 
-!!! warning "Directories named with a dot and a single character are reserved for KX."
+:warning: **Directories named with a dot and a single character are reserved for KX.**
 
 We use the term _dictionary_ for local dictionary-valued variables, and for global dictionaries when used as structured data. For example, 
 
@@ -45,8 +40,8 @@ Bond:`tick`coup`mat!(`xyz;9.2;2017.08.15)
 ```
 
 
-## Conventions
-
+Conventions
+-----------
 
 The following naming conventions are designed to help you write intelligible, compact code. 
 
@@ -62,8 +57,8 @@ local function   | begin with a lower-case letter and contain exactly two charac
 The letters `x`, `y`, and `z` are used exclusively for the first , second, and third arguments to a function. 
 
 
-## Names with underscores
-
+Names with underscores
+----------------------
 Use of the underscore character as a separator in multipart names should be avoided, since this will interfere with the commonly used q operator `_`. Phrases such as the following are difficult to read.
 
 ```q
@@ -85,8 +80,8 @@ aNameWithParts
 The only context in which the underscore should occur as part of a name is where that name has an origin outside q; for example, if you are reading a Sybase table into q, and that table contains names with underscores. 
 
 
-## Names with intermittent uppercase
-
+Names with intermittent uppercase
+---------------------------------
 Long descriptive names are almost always less readable than short ones. Consider the following sequence of ever-shorter names.
 
 ```q
@@ -113,12 +108,12 @@ Which line contains the typo?
 
 Long names make it hard to see syntactic structure, which contributes as importantly to the meaning of an expression as does the ‘meaning’ of a single function or an individual piece of data. Long names also make it hard to see typos, since any twelve-character names looks much like itself minus one letter. (Which is why proof readers get paid – say, did you find _both_ typos in the last example?)
 
-**If it is important you’ll type it a lot.  
+**If it is important you’ll type it a lot.<br>
 If you type it a lot, it should be short.**
 
 
-## Prevention of cruelty to vowels
-
+Prevention of cruelty to vowels
+-------------------------------
 Some programmers try to reduce typing and keep their code descriptive by purging all or most vowels from long names, together with those consonants which seem redundant. For example, the path
 
 ```q
@@ -135,7 +130,7 @@ salestrack.position.Table.NewBalance
 
 While the first name is shorter, it is definitely harder to type than the unabbreviated form. Convince yourself of this by typing both names from memory four or five times at normal typing speed. the chances are good that you will mistype the first name more often than the second. That fact alone should warn us off the practice.
 
-!!! tip "Use names made of either"
+:thumbs-up: **Use names made of either**
 
     -   a single letter
     -   a single syllable
@@ -151,11 +146,11 @@ Typing accuracy as well as typing speed is at stake here. Sometimes we are actua
 
 Practice the following typing instructions with a friend:
 
-s l s t r k dot p o s n dot capital t bl dot capital n e w capital b lnc
+    s l s t r k dot p o s n dot capital t bl dot capital n e w capital b lnc
 
-salestrack dot position dot capital t table dot new capital b balance
+    salestrack dot position dot capital t table dot new capital b balance
 
-s t dot pos dot capital t tab capital n new
+    s t dot pos dot capital t tab capital n new
 
 **A name that is easy to pronounce is easy to remember and easy to type.**
 

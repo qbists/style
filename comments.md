@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Comments
-
+Comments
+========
 
 
 **Comment every line** of a q function, keeping code and comment on the same line. 
@@ -29,8 +24,8 @@ sendLeft:{                      / update from left to right links at x=_i
 <!-- FIXME replace with q function of comparable substance. -->
 
 
-## Conventions for comments
-
+Conventions for comments
+------------------------
 line | comment
 -----|---------
 Local assignment | Describe the meaning or the role of the variable.
@@ -40,8 +35,8 @@ Control structure | Describe the meaning of the condition or loop.
 **Document ‘dangerous curves’ in ALL CAPS, or use some other eye-catching device.**
 
 
-## Header comments
-
+Header comments
+---------------
 How to comment the header of a q function is a matter of some controversy. 
 
 We recommend treating the header as just another line in the function, with this one difference: the comment should describe the meaning of the function as a whole. 
@@ -61,8 +56,8 @@ sendLeft:{
 The header comment block contains a function description, author and timestamp data, argument and result documentation, and information about which global variables are read and set. Unfortunately, this style tends to bloat functions with non-executable lines. Recall that the typical q function contains but five lines.
 
 
-## Help dictionary
-
+Help dictionary
+---------------
 The same information could be packed into a help dictionary for the function.
 
 ```q

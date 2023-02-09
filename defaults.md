@@ -1,13 +1,8 @@
----
-author: Stevan Apter
-keywords: argument, default, kdb+, null, q, style
----
+Defaults
+========
 
-# Defaults
-
-
-## Use null to mean default value
-
+Use null to mean default value
+------------------------------
 In multidimensional indexing, q uses null (`::`) to mean “all”. 
 
 ```q
@@ -25,8 +20,8 @@ copy:{[table;fields]
 ```
 
 
-## Interpret `()` as none
-
+Interpret `()` as none
+----------------------
 ```q
 copy:{[table;fields]
   if[fields~();:()];
@@ -44,8 +39,8 @@ copy:{[fields;table]
 ```
 
 
-## Let null mean ‘none’ if ‘none’ is the default
-
+Let null mean ‘none’ if ‘none’ is the default
+---------------------------------------------
 ```q
 foo:{
   if[x~::;x:()]

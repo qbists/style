@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Projection
-
+Projection
+==========
 
 Never elide semicolons in a projection.
 

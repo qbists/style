@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: function, kdb+, length, q, style
----
-
-# How long is a function?
-
+How long is a function?
+=======================
 
 
 **Strive to keep functions as short as possible.**

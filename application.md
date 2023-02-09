@@ -1,15 +1,9 @@
----
-title: Style – application and indexing  – kdb+ and q documentation
-description: In q, there are several ways to apply a function and index a variable. Underlying them all is the ur-function Apply/Index.
-author: Stevan Apter
-keywords: apply, at, dot, index, kdb+, q, style, trap
----
-# Application and indexing 
+Application and indexing 
+========================
 
-
-## All the forms of dot
-
-In q, there are several ways to apply a function and index a variable. Underlying them all is the _ur_-function [Apply/Index](../ref/apply.md)
+All the forms of dot
+--------------------
+In q, there are several ways to apply a function and index a variable. Underlying them all is the _ur_-function [Apply/Index](https://code.kx.com/q/ref/apply.md)
 
 ```q
 .
@@ -22,8 +16,8 @@ f . v
 ```
 
 
-## Where it’s `@`
-
+Where it’s `@`
+--------------
 > The only place you can fall from  
 > is where it’s at; and when you’re down,  
 > you’re not there – that’s why.  
@@ -58,8 +52,8 @@ g[w]
 **Maximize readability by using the simplest syntax available.**
 
 
-## Brackets and parens
-
+Brackets and parens
+-------------------
 All functions can be applied with bracket notation.
 Infix and prefix syntax is usually clearer and preferable.
 

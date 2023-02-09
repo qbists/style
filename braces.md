@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Use of braces
-
+Use of braces
+=============
 
 A function containing one statement which returns a result:
 

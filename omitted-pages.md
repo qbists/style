@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Omitted pages
-
+Omitted pages
+=============
 
 The following pages from the [original paper](http://www.nsl.com/papers/style.pdf) have been omitted as irrelevant to q.
 

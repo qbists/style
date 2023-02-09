@@ -1,15 +1,6 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
+What’s in a script?
+===================
 
-# What’s in a script?
-
-
-<!-- FIXME
-Omitted parts refer to K. 
-Is what’s left worth keeping?
- -->
 
 A script template used by one programmer consists of the following sections:
 

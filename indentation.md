@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: indentation, kdb+, layout, q, style
----
-
-# Indentation
-
+Indentation
+===========
 
 **Indent no more than two spaces within a function.**
 

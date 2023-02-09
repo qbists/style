@@ -1,18 +1,12 @@
----
-title: The right conditional | Remarks on Style | q and kdb+ documentation
-description: Consistent use of if and the conditional will make your code more readable. Indexing and dictionaries are often faster and more expressive forms. 
-author: Stevan Apter and Stephen Taylor
-keywords: conditional, default, dictionary, else, if, indexing, result, switch
----
-# The right conditional
-
+The right conditional
+=====================
 
 
 Q has two forms of conditional evaluation: Cond (`$`) and `if`. The following rules help you write code where useful information is conveyed by your choice of conditional.
 
 :point_right:
-Reference: [Cond](../ref/cond.md),
-[`if`](../ref/if.md)
+Reference: [Cond](https://code.kx.com/q/ref/cond.md),
+[`if`](https://code.kx.com/q/ref/if.md)
 
 `if` has the syntax:
 
@@ -34,7 +28,7 @@ r:$[cond1; true1;
 
 Cond returns a result; `if` does not. (Strictly: it returns a null.) Use `if` only when you do not want to capture a result. Another way to say this is:
 
-!!! tip "Use `if` to govern a side effect." 
+:thumbs-up: **Use `if` to govern a side effect.**
 
 ```q
 foo:{
@@ -64,11 +58,11 @@ Here, the thought is: there _will_ be a value for `x`, whether supplied or not. 
 x:(x;101)x~::;
 ```
 
-!!! tip "If in doubt, avoid `if`."
+:thumbs-up: **If in doubt, avoid `if`.**
 
 
-## Validation
-
+Validation
+----------
 It is common for a function to validate its arguments before doing its work. 
 This can be written as a multiply-nested Cond. 
 
@@ -102,8 +96,8 @@ foo:{
 ```
 
 
-## If-then-else
-
+If-then-else
+------------
 Although `if` does not support if-then-else logic, it should be used even when that logic is required but where side effects are intended. 
 
 ```q
@@ -112,8 +106,8 @@ if[not b;goo::y];
 ```
 
 
-## Indexing
-
+Indexing
+--------
 If/else and case constructions can often be represented as indexes.
 Indexing has great power of expression. 
 
@@ -144,8 +138,8 @@ r:(goo;foo)[x>5] x
 ```
 
 
-## Switch statement
-
+Switch statement
+----------------
 A [switch statement](https://en.wikipedia.org/wiki/Switch_statement "Wikipedia") produces different outcomes according to the value of a variable. It is easy to represent with Cond.
 
 ```q
@@ -158,7 +152,7 @@ foo:{[age]
 ```
 
 Repeated tests of the same value suggests an alternative. 
-We can use [Find](../ref/find.md) and two lists. 
+We can use [Find](https://code.kx.com/q/ref/find.md) and two lists. 
 
 ```q
 foo:{"You are ",("one";"two";"three";"four";"not one, two, three, or four")1 2 3 4?x}
@@ -180,14 +174,15 @@ Consistent use of `if` and the conditional will make your code more readable:
 -   seeing `if` you know that a side effect is sought and a result is not; 
 -   seeing `$[]`, you know that a result is intended unconditionally.
 
+---
 
 :point_right:
-Reference: [`do`](../ref/do.md), 
-[`while`](../ref/while.md), 
-[Do](../ref/accumulators.md#do),
-[While](../ref/accumulators.md#while),
-[Vector Conditional](../ref/vector-conditional.md)<br>
-Basics: [Controlling evaluation](../basics/control.md)
+[`do`](https://code.kx.com/q/ref/do.md), 
+[`while`](https://code.kx.com/q/ref/while.md), 
+[Do](https://code.kx.com/q/ref/accumulators.md#do),
+[While](https://code.kx.com/q/ref/accumulators.md#while),
+[Vector Conditional](https://code.kx.com/q/ref/vector-conditional.md)<br>
+[Controlling evaluation](https://code.kx.com/q/basics/control.md)
 
 
 

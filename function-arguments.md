@@ -1,13 +1,8 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# How many arguments should a function have?
+How many arguments should a function have?
+==========================================
 
 
-
-One of the most interesting properties of the q language is that function application is itself a function. [Apply](../ref/apply.md) takes a function on the left and a list of arguments on the right, and applies the function to the list, mapping each item of the list to the corresponding argument of the function. 
+One of the most interesting properties of the q language is that function application is itself a function. [Apply](https://code.kx.com/q/ref/apply.md) takes a function on the left and a list of arguments on the right, and applies the function to the list, mapping each item of the list to the corresponding argument of the function. 
 
 Used properly, this is a wonderfully convenient feature, since functions can be designed to apply to many small, named things, which are themselves parts of a list or dictionary. Keeping the parts in a composite data structure is good for organizational reasons. Designing the function to see those parts as separate, named entities reduces code and improves readability.
 

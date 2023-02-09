@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: compose, composition, each, kdb+, over, q, style
----
-
-# Compose out eaches
-
+Compose out eaches
+==================
 
 
 
@@ -20,7 +15,7 @@ and replace them with function compositions like this:
 '[first;reverse] each v          / last of each v
 ```
 
-Combine [Compose](../ref/compose.md) with [`over`](../ref/accumulators.md) to join longer sequences of functions:
+Combine [Compose](https://code.kx.com/q/ref/compose.md) with [`over`](https://code.kx.com/q/ref/accumulators.md) to join longer sequences of functions:
 
 ```q
 ('[;] over (upper;first;reverse)) each v

@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# De-looping
-
+De-looping
+==========
 
 
 <!-- FIXME: Test code. -->
@@ -119,7 +114,7 @@ q)search2[L;S]
 0 4
 ```
 
-!!! important "Derive non-looping solutions from well-designed looping solutions."
+**Derive non-looping solutions from well-designed looping solutions.**
 
 [^1]: Not strictly true: the problem can be solved with Each, but the converging solution using Over is both faster and more readable.
 

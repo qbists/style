@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Internal assignment
-
+Internal assignment
+===================
 
 
 
@@ -43,6 +38,6 @@ Test your code by mentally drawing arrows from each assignment to each use of th
 
 It’s a good idea to pick one or two letters for the purpose of temporary assignment, and use them constantly and exclusively for this purpose. (`t` and `u` are good. And if you do so, then modify the arrow test above to allow for re-use of those names on successive lines.)
 
-
+---
 :point_right: 
 [Three Principles of Coding Clarity](http://archive.vector.org.uk/art10009750): The first principle: shorten lines of communication

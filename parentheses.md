@@ -1,10 +1,5 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
-# Parentheses
-
+Parentheses
+===========
 
 Avoid unnecessary parentheses. The grammar of q is simple and there is no precedence order for the primitives. For example, the expression to multiply `a` by the sum of `b` and `c`:
 
