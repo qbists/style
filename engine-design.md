@@ -1,8 +1,3 @@
----
-author: Stevan Apter
-keywords: kdb+, q, style
----
-
 # Engine design
 
 
@@ -54,10 +49,9 @@ Don’t design tools prematurely, or with too general a purpose in mind. Keep th
 
 Most tools contain functionality which is never used. Avoid using tools which are too heavy for the job in hand. Don’t overpopulate the tree with utility functions and variables which your application [will not use](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it "Wikipedia: You aren’t going to need it"). 
 
-:fontawesome-brands-youtube: 
-[The design of Software Tools](https://www.youtube.com/watch?v=qSVR4Z3DA24): A developer pleads for simple tools 
+[![YouTube](https://img.youtube.com/vi/qSVR4Z3DA24/hqdefault.jpg)](https://www.youtube.com/watch?v=qSVR4Z3DA24)<br>*A developer pleads for simple tools*
 
 If you want one tool out of a pre-packaged set of twenty, extract that tool and tuck it into your application. If you want a single piece of functionality built into a larger system, consult the author and learn how to implement it yourself. Remember that in q, ideas are worth more than code. 
 
 
-!!! important "Minimize the number of moving parts."
+**Minimize the number of moving parts.**
